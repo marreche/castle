@@ -1,0 +1,52 @@
+{%  extends 'base.html.twig' %}
+
+{% block title %} Projects {% endblock %}
+
+{#{% block body %}#}
+{#<table class="border" width=100% align="left">#}
+{#    <thead>#}
+{#    <tr>#}
+{#        {% for project in projects %}#}
+{#            <th>{{ "Name" }}</th>#}
+{#        {% endfor %}#}
+{#    </tr>#}
+{#    </thead>#}
+{#    <tbody>#}
+{#    {% for sub_array in projects %}#}
+{#        <tr>#}
+{#            {% for value in sub_array %}#}
+{#                <td>{{ value }}</td>#}
+{#            {% endfor %}#}
+{#        </tr>#}
+{#    {% endfor %}#}
+{#    </tbody>#}
+{#</table>#}
+{#{% endblock %}#}
+
+{% block body %}
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+<table class="border" width=100% style="table-layout: fixed">
+    <thead>
+    <tr>
+        <th> ID </th>
+        <th> Name </th>
+        <th> Amount </th>
+        <th> Start Date </th>
+    </tr>
+    </thead>
+    {% for project in projects %}
+    <tr>
+        <td> {{ project.id }}</td>
+        <td> {{ project.name }}</td>
+        <td> {{ project.amount }}</td>
+        <td> {{ project.startdate|date}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
