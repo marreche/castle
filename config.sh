@@ -19,6 +19,3 @@ sudo symfony serve -d
 echo -e "${GREEN}Server running at localhost!${NC}"
 echo "--------------------------------------------------"
 echo -e "${GREEN} CONFIGURATION COMPLETE!"
-
-
-
