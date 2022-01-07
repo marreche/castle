@@ -4,6 +4,8 @@ I began by choosing to create a dockerized mysql server to save me the hassle of
 
 After configuring docker and the database within, I started creating the different routes.
 
+I used twig for the HTML templates and their rendering and doctrine for all the database functionalities.
+
 ## Homepage
 
 __Route = "/"__
