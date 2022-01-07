@@ -6,6 +6,8 @@ After configuring docker and the database within, I started creating the differe
 
 I used twig for the HTML templates and their rendering and doctrine for all the database functionalities.
 
+To use follow the Install.md instructions.
+
 ## Homepage
 
 __Route = "/"__
