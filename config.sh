@@ -28,7 +28,6 @@ echo "PRIMARY KEY(id))"
 echo "DEFAULT CHARACTER SET utf8mb4 COLLATE 'utf8mb4_unicode_ci' ENGINE = InnoDB;"
 echo 
 echo -e "To exit the mysql cli just type ${RED}'exit'${NC}"
-sudo docker-compose exec database mysql --password=password
 
 
 
